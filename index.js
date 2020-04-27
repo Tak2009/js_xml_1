@@ -42,7 +42,7 @@ function getData2() {
     if (xmlhttp.readyState == 4) {
       if (xmlhttp.status == 200) {
         var elem = document.getElementById("output");
-
+        debugger
         elem.innerHTML += "----- getElementsByTagName -----<br/>";
         var docelem = xmlhttp.responseXML.documentElement;
         var nodes = docelem.getElementsByTagName("item");
